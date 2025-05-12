@@ -14,7 +14,7 @@ function AppRouter() {
       element: <BuscarCliente />,
     },
     {
-      path: "buscarproducto",
+      path: "/buscarproducto",
       element: <BuscarProducto />,
     },
   ];

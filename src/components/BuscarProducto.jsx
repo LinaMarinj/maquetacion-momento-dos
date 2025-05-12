@@ -1,7 +1,32 @@
+import EstilosBuscador from "./Buscar.module.css";
+import { Link } from "react-router";
+
 function BuscarProducto() {
   return (
     <>
-      <h1>Buscar Producto</h1>
+      <section className={EstilosBuscador.seccionBuscar}>
+        <div>
+          <section className={EstilosBuscador.containerBuscar}>
+            <div>
+              <input className={EstilosBuscador.inputBuscar} type="text" name="ID" placeholder="ID" required />
+            </div>
+            <div>
+              <button className={EstilosBuscador.btnBuscar} type="buton">
+                Buscar
+              </button>
+            </div>
+            <div>
+              <Link className={EstilosBuscador.links} to="/buscarcliente">
+                Buscar cliente
+              </Link>
+            </div>
+          </section>
+        </div>
+
+        <div>
+          <h1 className={EstilosBuscador.title}>Buscar Producto</h1>
+        </div>
+      </section>
     </>
   );
 }
