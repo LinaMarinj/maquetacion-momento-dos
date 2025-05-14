@@ -1,4 +1,4 @@
-import Estiloscatalogos from "./Catalogos.module.css";
+import Estiloscatalogos from "./Bloque.module.css";
 
 function Bloque({ imageSrc, imageAlt, buttonText, key }) {
   return (

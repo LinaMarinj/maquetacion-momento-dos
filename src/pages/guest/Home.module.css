@@ -1,51 +1,115 @@
-
-.banner {
-  background-color: #f6ada6;
-  color: white;
-  padding: 20px 20px;
-  text-align: center;
+.bienvenida {
+  background-image: url("../../assets/fondos/pan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.bannerContent {
-  max-width: 800px;
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.divTitles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  padding: 40px;
+}
+
+.container {
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.bannerTitle {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.title {
+  text-align: center;
 }
 
-.bannerSubtitle {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.logo {
-  width: 100px;
-}
-
-.sectionTitle {
-  font-size: 2.5rem;
+.contactInfo {
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.contactItem {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contactLink {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.formContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 5px;
   color: #333;
-}
-
-.descriptionText {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-
-.btnVer {
-  height: 30px;
-  width: 100px;
-  border: 2px solid black;
-  margin-bottom: 20px;
-  background: none;
-  border-right: 4px solid black;
-  box-shadow: 0 2px #000;
   font-weight: bold;
+}
+
+.input,
+.textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 1em;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.location {
+  text-align: center;
+}
+
+.mapPlaceholder {
+  background-color: #ddd;
+  height: 200px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  margin-top: 100px;
 }

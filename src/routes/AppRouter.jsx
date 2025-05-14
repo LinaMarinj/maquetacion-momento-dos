@@ -1,10 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import BuscarCliente from "../components/BuscarCliente";
-import BuscarProducto from "../components/BuscarProducto";
-import CatalogoCliente from "../components/CatalogoCilente";
-import CatalogoProducto from "../components/CatalogoProducto";
+import BuscarCliente from "../pages/private/BuscarCliente";
+import BuscarProducto from "../pages/private/BuscarProducto";
+import CatalogoCliente from "../pages/private/CatalogoCilente";
+import CatalogoProducto from "../pages/private/CatalogoProducto";
+import RegistrationForm from "../pages/guest/RegistrationForm";
+import AboutUs from "../pages/guest/AboutUs";
 import Home from "../pages/guest/Home";
 import Login from "../pages/guest/login";
+import Dashboard from "../pages/private/Dashboard";
 
 function AppRouter() {
   const rutas = [
@@ -31,6 +34,18 @@ function AppRouter() {
     {
       path: "/catalogoproducto",
       element: <CatalogoProducto />,
+    },
+    {
+      path: "/registration",
+      element: <RegistrationForm />,
+    },
+    {
+      path: "/aboutus",
+      element: <AboutUs />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
   ];
   return <RouterProvider router={createBrowserRouter(rutas)} />;

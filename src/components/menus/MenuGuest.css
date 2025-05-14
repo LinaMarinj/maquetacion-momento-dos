@@ -1,0 +1,43 @@
+.barra-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6ada6;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+.logo-nombre img {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.titulo-pasteleria {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-opciones {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-opciones li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu-opciones li a:hover {
+  color: #3a3939;
+}
