@@ -18,9 +18,11 @@ function BuscarCliente() {
               />
             </div>
             <div>
-              <button className={EstilosBuscador.btnBuscar} type="buton">
-                Buscar
-              </button>
+              <Link to="/catalogocliente">
+                <button className={EstilosBuscador.btnBuscar} type="buton">
+                  Buscar
+                </button>
+              </Link>
             </div>
             <div>
               <Link className={EstilosBuscador.links} to="/buscarproducto">
@@ -31,7 +33,7 @@ function BuscarCliente() {
         </div>
 
         <div>
-          <h1 className={EstilosBuscador.title}>Buscar Cliente </h1>
+          <h1 className={EstilosBuscador.title}>Buscar Cliente</h1>
         </div>
       </section>
     </>

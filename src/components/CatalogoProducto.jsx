@@ -1,35 +1,42 @@
 import Estiloscatalogos from "./Catalogos.module.css";
 import Bloque from "./Bloque";
+import Producto1 from "../assets/productos/producto-uno.webp";
+import Producto2 from "../assets/productos/producto-dos.webp";
+import Producto3 from "../assets/productos/producto-tres.webp";
+import Producto4 from "../assets/productos/producto-cuatro.webp";
+import Producto5 from "../assets/productos/producto-cinco.webp";
+import Producto6 from "../assets/productos/producto-seis.webp";
+import { Link } from "react-router";
 
 function CatalogoProducto() {
   const dataProducto = [
     {
-      imageSrc: "test",
+      imageSrc: Producto1,
+      imageAlt: "Aretes",
+      buttonText: "Ver",
+    },
+    {
+      imageSrc: Producto2,
       imageAlt: "test",
       buttonText: "Ver",
     },
     {
-      imageSrc: "test",
+      imageSrc: Producto3,
       imageAlt: "test",
       buttonText: "Ver",
     },
     {
-      imageSrc: "test",
+      imageSrc: Producto4,
       imageAlt: "test",
       buttonText: "Ver",
     },
     {
-      imageSrc: "test",
+      imageSrc: Producto5,
       imageAlt: "test",
       buttonText: "Ver",
     },
     {
-      imageSrc: "test",
-      imageAlt: "test",
-      buttonText: "Ver",
-    },
-    {
-      imageSrc: "test",
+      imageSrc: Producto6,
       imageAlt: "test",
       buttonText: "Ver",
     },
@@ -47,6 +54,11 @@ function CatalogoProducto() {
           />
         );
       })}
+      <div className={Estiloscatalogos.divBtn}>
+        <Link to="/">
+          <button className={Estiloscatalogos.btnHome}>Home</button>
+        </Link>
+      </div>
     </section>
   );
 }

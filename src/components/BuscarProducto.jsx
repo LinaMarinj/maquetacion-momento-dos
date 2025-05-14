@@ -8,12 +8,18 @@ function BuscarProducto() {
         <div>
           <section className={EstilosBuscador.containerBuscar}>
             <div>
-              <input className={EstilosBuscador.inputBuscar} type="text" name="ID" placeholder="ID" required />
+              <input
+                className={EstilosBuscador.inputBuscar}
+                type="text"
+                name="ID"
+                placeholder="ID"
+                required
+              />
             </div>
             <div>
-              <button className={EstilosBuscador.btnBuscar} type="buton">
-                Buscar
-              </button>
+              <Link to="/catalogoproducto">
+                <button className={EstilosBuscador.btnBuscar}>Buscar</button>
+              </Link>
             </div>
             <div>
               <Link className={EstilosBuscador.links} to="/buscarcliente">
